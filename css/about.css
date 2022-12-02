@@ -1,0 +1,15 @@
+/* For at alt innholdet på sidn skal fade inn */
+html {
+    animation: imageFadeIn 2s;
+}
+
+body {
+    text-align: left;
+}
+
+.aboutUs{
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+}
+

@@ -1,0 +1,120 @@
+/* Skrevet av Mathias, Martin, Altin og Jokubas */
+/* Vi starter med å si at marginen er 0 og gir denne siden en bakgrunnsfarge */
+html {
+    animation: imageFadeIn 2s;
+}
+
+body{
+    margin: 0;
+}
+/* Her så posisjonerer vi alt i "main taggen" med bakgrunnsbildet som er kartet.
+Vi runder av kantene og passer på at det er litt lufterom fra header */
+main {
+
+    position: relative;
+    background: url('../images/mapAustralia-min.jpg');
+    max-width: 100%;
+    background-size: cover;
+    padding-top: 70%;
+    border-radius: 5px;
+}
+/* Her så styler vi popupen som skjer på kartet, ikke selve hoveren.
+Vi gir den "display none" sånn at den er usynlig helt til man bruker hover */
+.cityPopup {
+
+    position: relative;
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    display: none;
+}
+
+/* For å få bynavnet/ tittel i store bokstaver */
+.cityHeader {
+    text-transform: uppercase;
+}
+
+
+/* Styling av popup teksten */
+.cityImage, .cityHeader, .cityDescription {
+
+    position: relative;
+    display: inline-block;
+    color: white;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.container {
+
+    position: absolute;
+    display: inline;
+}
+
+#sydney, #melbourne, #blueMountains, #montville {
+
+    z-index: 2;
+    bottom: 55px;
+}
+
+#montville {
+
+    right: 20px;
+}
+
+
+/* Posisjonen til markørene */
+#sydneyContainer {
+
+    position: absolute;
+    bottom: 18.2%;
+    right: 10.7%;
+}
+
+#melbourneContainer {
+
+    position: absolute;
+    bottom: 7.5%;
+    right: 23.5%;
+}
+
+#blueMountainsContainer {
+
+    position: absolute;
+    bottom: 18.8%;
+    right: 12.5%;
+}
+
+#montvilleContainer {
+
+    position: absolute;
+    bottom: 38.8%;
+    right: 4.5%;
+}
+
+.container:hover .cityPopup {
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+p {
+
+    color: white;
+}
+
+p::after {
+
+    color: white;
+}
+
+.markerImage {
+
+    z-index: 1;
+    position: relative;
+    width: 50px;
+}

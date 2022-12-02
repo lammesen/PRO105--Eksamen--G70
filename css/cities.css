@@ -1,0 +1,30 @@
+/* For at alt innholdet på sidn skal fade inn */
+html {
+    animation: imageFadeIn 2s;
+}
+.containter {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.column {
+    max-width: 100%;
+    background-color: var(--blue);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10rem;
+}
+
+.columnImage {
+    max-width: 100%;
+    border-radius: 5px;
+
+}
+
+p, h2 {
+    color: var(--white);
+    margin: 10px;
+}
+
+h2 {
+    text-transform: uppercase;
+}

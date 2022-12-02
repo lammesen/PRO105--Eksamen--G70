@@ -1,0 +1,50 @@
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: Montserrat, sans-serif;
+}
+
+.navTitle {
+  color: var(--ocean);
+  font-size: 6vh;
+  font-weight: 900;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav {
+  margin: auto;
+  
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.navUl {
+  margin: 0;
+  padding: 0;
+}
+
+.navLi {
+  margin: 2rem;
+}
+
+.navButton {
+  color: var(--ocean);
+  font-size: 2vh;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navButton:hover {
+  color: var(--blue);
+  font-weight: 700;
+}

@@ -1,0 +1,98 @@
+    <!---- Skrevet av Mathias, Martin, Altin og Jokubas ---->
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Her har vi linket til css filene, de er nå koblet sammen. -->
+        <link rel="stylesheet" href="css/header.css" media="screen">
+        <link rel="stylesheet" href="css/map.css" media="screen">
+        <link rel="stylesheet" href="css/global.css" media="screen">
+        <!-- Sidens tittel -->
+        <title>Kart</title>
+    </head>
+    <body>
+<!---- NAV start ---->
+    <div class="navContainer">
+            <h1 class="navTitle">Australia</h1>
+            <div class="nav">
+                <ul class="menu navUl">
+                    <li class="navLi"><a class="navButton" href='home.html'>Hjem</a></li>
+                    <li class="navLi"><a class="navButton" href='map.html'>Kart</a></li>
+                    <li class="navLi"><a class="navButton" href='cities.html'>Byer</a></li>
+                    <li class="navLi"><a class="navButton" href='about.html'>Om</a></li>
+                </ul>
+            </div>
+    </div>
+<!---- NAV slutt ---->
+    <!---- | --- | ---->
+        
+<!---- | --- | ---->
+
+    <main>
+
+        <div class="container" id="sydneyContainer">
+
+            <img class="markerImage" src="images/mapMarker-min.png" alt="sydney-marker">
+
+            <a href="cities.html"><div class="cityPopup" id="sydney">
+
+                <div class="cityHeader"><h3>Sydney</h3></div>
+                <img class="cityImage" src="images/sydney-min.jpg" alt="sydney-image">
+                <p class="cityDescription">Sydney er Australias største og eldste by. Med over 4 millioner innbyggere, er Sydney-metropolen den største og mest innflytelsesrike av de to finansielle, transport-, handels- og kulturelle sentrene i Australia. For mange er Sydney selve symbolet på Australia. </p>
+                <p>Klikk på meg for mer info!</p>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="container" id="melbourneContainer">
+            <img class="markerImage" src="images/mapMarker-min.png" alt="melbourne-marker">
+
+            <a href="cities.html"><div class="cityPopup" id="melbourne">
+
+                <div class="cityHeader"><h3>Melbourne</h3></div>
+                <img class="cityImage" src="images/melbourne-min.jpg" alt="Melbourne-image">
+                <p class="cityDescription">Melbourne er hovedstad i den australske delstaten Victoria og er den nest største byen i Australia med et antatt innbyggertall i 2012 på 4,08 millioner. Byen er en av verdens større byer når det gjelder utstrekning.</p>
+                <p>Klikk på meg for mer info!</p>
+
+                </div>
+            </a>
+        </div>
+
+        <!---- Her så lager vi containere for de forskjellige byene som skal vises på kartet. Det er for å lettere samle info og kode sammen for
+    lettere tilgang i Css. Vi har brukt både klasser og id. Grunnen til det er at vi bruker begge er at klasser er noe vi kan gjenbruke
+    og id er unik kode vi kan hente i container. Dette gjelder for alle byene nedenfor. Vi har også valgt å velge flere "p-tag" for å variere litt (Kunne også brutk 2stk <br> og holdt seg til en p-tag) ---->
+        <div class="container" id="blueMountainsContainer">
+            <img class="markerImage" src="images/mapMarker-min.png" alt="bluemountains-marker">
+
+            <a href="cities.html"><div class="cityPopup" id="blueMountains">
+
+                <div class="cityHeader"><h3>Blue Mountains</h3></div>
+                <img class="cityImage" src="images/blueMountains-min.jpg" alt="blue-mountains-image">
+                <p class="cityDescription">Blue Mountains er et fjellområde i den australske delstaten New South Wales. Området begynner omkring 48 km. vest for Sydney. Politisk er Blue Mountains-regionen offisielt avgrenset av elvene Nepean og Hawkesbury i øst, Coxs-elven og Burragorang-sjøen i vest og sør, og elvene Wolgan og Colo i nord.</p>
+                <p>Klikk på meg for mer info!</p>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="container" id="montvilleContainer">
+            <img class="markerImage" src="images/mapMarker-min.png" alt="montville-marker">
+
+            <a href="cities.html"><div class="cityPopup" id="montville">
+
+                <div class="cityHeader"><h3>Montville</h3></div>
+                <img class="cityImage" src="images/montville-min.jpg" alt="montville-image">
+                <p class="cityDescription">Montville er en landlig by og lokalitet i Sunshine Coast-regionen, Queensland, Australia. I folketellingen for 2016 hadde lokaliteten Montville en befolkning på 970 mennesker. Montville er kjent for turistattraksjoner.</p>
+                <p>Klikk på meg for mer info!</p>
+
+                </div>
+            </a>
+        </div>
+
+    </main>
+
+    </body>
+</html>

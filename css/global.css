@@ -1,0 +1,52 @@
+/* Importere fonter */
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* Definerer globale verdier */
+:root {
+
+	--blue:		#314453;
+	--ocean:	#5b9b8f;
+	--corn:		#dfc96c;
+	--dune:		#e1a963;
+	--barn:		#cf7953;
+	--white:	#f9f9f9;
+	    
+
+	background:	var(--white);
+	color:		var(--blue);
+
+}
+p, h1, h2, h3, h4 {
+	font-family: Montserrat, sans-serif;
+}
+
+/* Globale animasjoner */
+@keyframes imageFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* For at alt innholdet på sidn skal fade inn */
+html {
+    animation: imageFadeIn 2s;
+}
+

@@ -1,0 +1,21 @@
+/* For at alt innholdet på sidn skal fade inn */
+html {
+    animation: imageFadeIn 2s;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 3vh;
+}
+
+img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	object-fit: contain;
+	border-radius: 5px;
+	width: 40%;
+}
+
+
